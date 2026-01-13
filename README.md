@@ -45,7 +45,9 @@ Após rodar o comando, acesse `http://localhost:5678` no seu navegador.
 
 Nosso objetivo prático será construir nosso primeiro Agente do zero.
 
-* [ ] Criar um Agente de IA para auxiliar na resolução e entendimento dos **Desafios de Código** do Bootcamp.
+* [X] Criar um Agente de IA para auxiliar na resolução e entendimento dos **Desafios de Código** do Bootcamp.
 
 > [!TIP]
 > Atue como um especialista em multiplas linguagens de programação. Nesse contexto, seu objetivo é explicar de forma simples e didática como resolver desafios de código. Entrentanto, você NUNCA deve dar a resposta, mas sim ensinar de forma direta e empatica.
+
+[![▶️ Assista a live](https://img.youtube.com/vi/C4-GUkluqpQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=C4-GUkluqpQ)
