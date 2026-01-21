@@ -24,7 +24,7 @@ Para acompanhar a mentoria e criar seus fluxos, você tem duas opções principa
 > [!NOTE]
 > https://app.n8n.cloud
 
-### 2. Instalação Local (Docker)
+### 2. Instalação Local N8N (Docker)
 
 É a versão que roda diretamente na sua máquina. É gratuita e perfeita para estudos e automações pessoais. Foi a opção que escolhi para esta live. Se você já tem o Docker instalado, basta rodar os comandos abaixo no seu terminal para subir o container:
 
@@ -39,7 +39,26 @@ Após rodar o comando, acesse `http://localhost:5678` no seu navegador.
 > [!NOTE]
 > https://hub.docker.com/r/n8nio/n8n
 
----
+
+### 2.1 Instalação Local Ollama (Docker)
+```bash
+VERSÃO FULL:
+	mkdir -p ~/.ollama
+	docker run -d \
+	  --name ollama \
+	  --restart unless-stopped \
+	  -p 127.0.0.1:11434:11434 \
+	  -v ~/.ollama:/root/.ollama \
+	  ollama/ollama:latest
+  
+--------------------------------------
+
+VERSÃO Ollama PARA NOTE, P/ NÃO ESQUENTAR:
+	
+	mkdir -p ~/.ollama
+	
+	docker run -d --name ollama --restart unless-stopped --gpus all --cpus="8" --memory="24g" -p 127.0.0.1:11434:11434 -v ~/.ollama:/root/.ollama ollama/ollama:latest
+```
 
 ## 📝 TODO: O Que Faremos na Live
 
